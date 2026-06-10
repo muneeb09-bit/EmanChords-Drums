@@ -1,0 +1,13 @@
+{
+  "name": "fchord-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web-based audio chord extractor using FastAPI, Basic Pitch, and React.",
+  "scripts": {
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:preview": "npm --prefix frontend run preview",
+    "backend:dev": "python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload"
+  }
+}
