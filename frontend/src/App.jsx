@@ -70,7 +70,7 @@ function App() {
       const formData = new FormData();
       formData.append("file", file);
 
-      await axios.get(HEALTH_URL, { timeout: 3000 });
+      await axios.get(HEALTH_URL, { timeout: 3000000 });
 
       const response = await axios.post(API_URL, formData, {
         headers: { "Content-Type": "multipart/form-data" },
